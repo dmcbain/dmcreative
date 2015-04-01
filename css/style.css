@@ -1,0 +1,306 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+
+line-height: 1;
+
+/*background-color: LightGray;*/
+font-family: 'Roboto', sans-serif;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div {
+    /*border: 1px solid Chocolate;*/
+}
+/* Navigation Section */
+.top-navigation {
+    background-color: #000;
+    position: fixed;
+	width: 100%;
+	z-index: 9999;
+
+}
+.top-navigation > .content {
+    max-width: 757px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    
+}
+.logo{
+	height: 70px;
+    margin-left: -15px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    line-height: 35px;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+.top-navigation .links  {
+	float: right;
+	margin-top: 25px;
+	font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.top-navigation .links > .active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.top-navigation .links a:hover {
+	cursor: pointer;
+    color: #fff;
+}
+
+.top-navigation .links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 735px;
+	overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.introduction h1 {
+    margin-top: 280px;
+    font-size: 200px;
+    font-family: 'eb garamond',serif;
+     margin-bottom: -10px;
+  margin-top: 80px;
+}
+
+.introduction h3 {
+    margin-top: 12px;
+    font-size: 24px;
+    margin-bottom: 27px;
+}
+
+
+.top-navigation h3 {
+    display: inline-block;
+    color: #fff;
+    float: left;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.my-services,
+.my-work
+{
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.my-services, .my-work .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.my-services,
+.my-work h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
+    font-weight: 300;
+}
+
+.content h2 {
+    font-size: 44px;
+    margin: 66px 0 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.content p {
+margin: 0 60px;
+}
+
+.my-work .devices li {
+    width: 33.3333333%;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.my-services .devices li {
+    width: 33.3333333%;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+ 
+.my-services,
+.my-work .devices h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 40px 0px 30px;
+}
+
+
+.social {
+background-color: #fff;
+text-align: center;
+margin-bottom: 136px;
+}
+
+.social .content {
+margin: 0 auto;
+max-width: 50em;
+padding: 0 15px;
+width: 60%;
+}
+
+.social hr {
+border: 0;
+border-top: 1px solid #eaebec;
+margin: 21px 0;
+}
+
+.social .icons li {
+border-radius: 20px;
+width: 40px;
+height: 40px;
+display: inline-block;
+margin: 20px 5px;
+border: 1px solid #eaebec;
+padding: 10px 0;
+text-align: center;
+}
+
+.social .fa-twitter {
+color: #55acee;
+}
+
+.fa-facebook {
+color: #4c66a4;
+}
+
+.fa-instagram {
+color: #3f729b;
+}
+
+.copy {
+font-size: 0.9em;
+font-weight: 300;
+color: #838994;
+}
+
+.about-content {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 110px;
+
+}
+
+.about-content h2 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    margin: 66px 0 50px;
+    font-weight: 300;
+}
+
+.about-content p {
+    margin: 2px 90px;
+    font-family: 'proxima_nova_regular', Arial, Helvetica, sans-serif;
+    font-size: 1.275em;
+      margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    max-width: 950px;
+    font-weight: normal;
+}
+
+.my-work h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    margin: 26px 0 50px;
+    font-weight: 300;
+}
+
