@@ -293,6 +293,7 @@ color: #838994;
     clear: both;
     max-width: 950px;
     font-weight: normal;
+    line-height: 1.4em;
 }
 
 .my-work h2 {
@@ -304,3 +305,39 @@ color: #838994;
     font-weight: 300;
 }
 
+.my-work .devices a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .introduction {
+        padding: 3em 0;
+    }
+    .introduction h1 {
+        font-size: 7em;
+    }
+    .introduction h3 {
+        font-size: 1em;
+    }
+    .about-content p {
+        padding: 10px 10px;
+        font-size: 1.1em;
+
+    }
+    .my-work .devices li {
+    width: 100%;
+    margin-right: -4px;
+    }
+    .my-services .devices li {
+    width: 100%;
+    padding: 22px;
+
+    }
+    .logo  {
+    font-size: 18px;
+    }
+    .top-navigation .links {
+        font-size: 14px;
+    }
+}
